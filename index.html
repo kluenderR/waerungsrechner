@@ -24,8 +24,24 @@
         background-color: rgba( 255, 255, 255, 0.1);
       }
       .flag{
-        width: 100px;
+        width: 60px;
+        position: absolute;
+        left: 50px;
       }
+      input{
+        height: 60px;
+        background-color:  transparent;
+        border: 1px solid  rgba( 255, 255, 255, 0.4);
+        border-radius: 10px;
+        flex: 1;
+    }
+    .input-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -39,7 +55,7 @@
       <img src="img/menu.png" alt="" />
       Währungsrechner
     </div>
-    <div>
+    <div class="input-container">
       <img class="flag" src="img/eu.png" alt="" />
       <input type="text" />
       EUR
@@ -47,7 +63,7 @@
     <div>
       <img src="img/arrows.png" alt="" />
     </div>
-    <div>
+    <div class="input-container">
       <img class="flag" src="img/usa.png" alt="" />
       <input type="text" />
       USD
