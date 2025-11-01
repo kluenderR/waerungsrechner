@@ -34,6 +34,10 @@
         border: 1px solid  rgba( 255, 255, 255, 0.4);
         border-radius: 10px;
         flex: 1;
+        padding-left: 100px;
+        color: white;
+        font-size: 24px;
+        text-align: center;
     }
     .input-container{
         display: flex;
@@ -41,7 +45,34 @@
         align-items: center;
         padding-left: 32px;
         padding-right: 32px;
+        position: relative;
     }
+    .currency{
+        position: absolute;
+        right: 42px;
+        font-size: 14px;
+        color: #4472c4;
+        font-weight: 700;
+        bottom: 24px;
+
+    }
+    .container-center{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    button{
+        background-color: #ffff32;
+        padding: 0 32px;
+        height: 50px;
+        border: unset;
+        font-size: 24px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px rgba(0,0,0,0.8);
+        cursor: pointer;
+
+    }
+
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -57,19 +88,20 @@
     </div>
     <div class="input-container">
       <img class="flag" src="img/eu.png" alt="" />
-      <input type="text" />
-      EUR
+      <input value="100" type="text" />
+      <span class="currency">EUR</span>
     </div>
-    <div>
+    <div class="container-center">
       <img src="img/arrows.png" alt="" />
     </div>
     <div class="input-container">
       <img class="flag" src="img/usa.png" alt="" />
       <input type="text" />
-      USD
+      <span class="currency">USD</span>
     </div>
-    <div>
-      <button>Berechnen</button>
+    <div class="container-center">
+      <button onclick="calc()">Berechnen</button>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
