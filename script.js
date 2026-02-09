@@ -9,3 +9,6 @@ function calc() {
 }
 
 //https://www.youtube.com/watch?v=kAEt6JxrkjI
+// pixabay.com
+//color picker: https://www.w3schools.com/colors/colors_picker.asp
+// google fonts
